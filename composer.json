@@ -1,0 +1,21 @@
+{
+	"name": "CMS-BASE/FISHERCOM",
+	"description": "CMS-BASE Framework.",
+	"keywords": ["CMS", "BASE"],
+	"license": "MIT",
+	"require": {
+		"php": "5.4.*"
+	},
+	"autoload": {
+		"classmap": [
+			"app/class",
+			"app/class/base",
+			"app/class/entity",
+			"app/class/util"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

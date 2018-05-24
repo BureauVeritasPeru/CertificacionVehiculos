@@ -1,0 +1,58 @@
+.login-web{
+  margin-top:20%;
+
+}
+form#login .section-heading {
+  color: white;
+}
+form#login .form-group {
+  margin-bottom: 25px;
+}
+form#login .form-group input,
+form#login .form-group textarea {
+  padding: 20px;
+  text-align: center;
+}
+form#login .form-group input.form-control {
+  height: auto;
+}
+form#login .form-group textarea.form-control {
+  height: 236px;
+}
+form#login .form-control:focus {
+  border-color: #b40139;
+  box-shadow: none;
+}
+form#login ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #eeeeee;
+}
+form#login :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #eeeeee;
+}
+form#login ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #eeeeee;
+}
+form#login :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #eeeeee;
+}
+form#login .text-danger {
+  color: #e74c3c;
+}

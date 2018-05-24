@@ -1,0 +1,1 @@
+<?php$oItem = new eGnvCalcomania();$oItem->calcomaniaID	= $kID;$MODULE->processFormAction(new GnvCalcomania(), $oItem);$MODULE->FormTitle="Calcomanía";?>

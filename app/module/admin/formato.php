@@ -1,0 +1,1 @@
+<?php$oItem = new eGlpFormato();$oItem->formatoID	= $kID;$MODULE->processFormAction(new GlpFormato(), $oItem);$MODULE->FormTitle="Formato";?>

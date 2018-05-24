@@ -1,0 +1,19 @@
+RewriteEngine On 
+
+RewriteCond %{ENV:URI} ^$
+
+RewriteRule ^assets($|/) - [L]
+RewriteRule ^(.*)$ - [ENV=URI:$1]
+
+RewriteCond %{ENV:BASE} ^$
+RewriteCond %{ENV:URI}::%{REQUEST_URI} ^(.*)::(.*?)\1$
+RewriteRule ^ - [ENV=BASE:%2]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^$ %{ENV:BASE}__cms-website.php [L,QSA]
+RewriteRule ^(.*).html$ %{ENV:BASE}__cms-website.php?furl=$1 [L,QSA]
+
+RewriteRule ^error$ %{ENV:BASE}__cms-error.php [L,QSA]
+RewriteRule ^admin/$ %{ENV:BASE}__cms-admin.php [L,QSA]
+RewriteRule ^admin/lightbox$ %{ENV:BASE}__cms-lightbox.php [L,QSA]
+RewriteRule ^admin$ %{ENV:BASE}admin/ [R=301,L]

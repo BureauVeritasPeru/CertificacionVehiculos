@@ -1,0 +1,1 @@
+<?php$oItem = new eGnvFormato();$oItem->formatoID	= $kID;$MODULE->processFormAction(new GnvFormato(), $oItem);$MODULE->FormTitle="Formato";?>
